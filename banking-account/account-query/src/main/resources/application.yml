@@ -8,9 +8,10 @@ spring:
     hibernate:
       ddl-auto: update
   datasource:
-    url: jdbc:mysql//localhost:3306/bankingAccount?createDatabaseIfNotExist=true
-    username: root
-    password: Admin123!@#
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/bankingAccount?createDatabaseIfNotExist=true
+    username: "root"
+    password: "Admin123!@#"
   kafka:
     listener:
       ack-mode: manual_immediate
